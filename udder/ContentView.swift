@@ -9,13 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, Udder")
-            .padding()
+        VStack{
+            textedit(txt: "Hello, Udder")
+            Spacer()
+            textedit(txt: "Hello, Udder")
+            Spacer()
+            textedit(txt: "Hello, Udder")
+            Spacer()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct textedit: View {
+    let txt : String
+    var body: some View {
+        Text(txt)
     }
 }
