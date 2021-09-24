@@ -16,6 +16,8 @@ struct ContentView: View {
             Spacer()
             textedit(txt: "Hello, Udder")
             Spacer()
+            ProgressView(value: 0.5)
+
         }
     }
 }
